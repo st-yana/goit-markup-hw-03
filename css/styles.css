@@ -3,14 +3,16 @@ body{
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
+    color: #434455;
+    background-color: #FFFFFF; 
 }
 .visually-hidden {
-    position: absolute;
+    /* position: absolute;
     width: 1px;
-    height: 1px;
+    height: 1px; */
     margin: -1px;
     border: 0;
-    padding: 0;
+    /* padding: 0; */
     
     white-space: nowrap;
     clip-path: inset(100%);
@@ -39,18 +41,23 @@ h1, h2, h3, p{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2e2f42;
+    color: #4d5ae5;
 }
 .part-logo{
-    color: #4d5ae5;
+    color:  #2e2f42;
 }
 .nav-link{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+}
+.link-hover:hover,
+.link-hover:focus
+{
+    color: #404bbf;
 }
 .address-link {
     font-weight: 400;
@@ -61,6 +68,12 @@ h1, h2, h3, p{
     text-decoration: none;
     font-style: normal;
 }
+.address-link:focus{
+    color: #404bbf
+}
+.title-background-effective-solutions{
+    background: #2e2f42;
+}
 .title{
     font-weight: 700;
     font-size: 56px;
@@ -68,13 +81,19 @@ h1, h2, h3, p{
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    background: #2e2f42;
+
 }
 .button-order-service{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
     background: #4d5ae5;
+    font-weight: 500;
+    cursor: pointer;
+}
+.button-order-service:hover,
+.button-order-service:focus{
+    background-color: #404BBF;
 }
 .subtitle-features{
     font-weight: 500;
@@ -97,9 +116,15 @@ h1, h2, h3, p{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    text-transform: capitalize;
+}
+
+.background-team{
+    background-color: #F4F4FD;
 }
 .team{
     text-align: center;
+    background-color: #FFFFFF;
 }
 .text-footer{
     font-weight: 400;
@@ -107,4 +132,13 @@ h1, h2, h3, p{
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #2e2f42;
+}
+.subtitle-potfolio{
+    text-transform: capitalize;
+}
+.footer-background{
+    background-color: #2e2f42;
+}
+.part-logo-footer{
+    color: #f4f4fd;
 }
