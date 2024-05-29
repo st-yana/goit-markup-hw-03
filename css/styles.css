@@ -13,8 +13,8 @@ ul, ol {
 } 
 img{
     display: block;
-    max-width: 100%;
     height: auto;
+    max-width: 100%;
     object-fit: cover;
 }
 a{
@@ -36,8 +36,7 @@ body{
     max-width: 1425px;
     padding: 0 15px;  
     margin: 0 auto; 
-    width: 1158px;
-    }
+}
 .section-title{
     font-weight: 700;
     font-size: 36px;
@@ -46,32 +45,18 @@ body{
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
-    margin-top: 120px;
-    margin-bottom: 72px;
 }
 .flex-list{
     display: flex;
     gap: 24px;
 }
-.item-text{
-    width: calc((100% - 72px) / 4);
-}
-.item-text{
-    flex-wrap: wrap;
-    gap: 24px;
-    margin-right: 24px;
-    border-radius: 0px 0px 4px 4px; 
-    padding: 32px 0 ;
-    width: calc((100% - 48px) / 3); 
-}
+
 .body-text{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 120px;
-    text-align: center;
 }
 .subtitle{
     font-weight: 500;
@@ -79,8 +64,6 @@ body{
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    margin-bottom: 8px;
-    margin-top: 32px;
     max-width: 496px;
 }
 .visually-hidden {
@@ -132,8 +115,11 @@ body{
     color: #2e2f42;
     padding: 24px 0 24px;
 }
-.header__item__link__switcher:hover,
-.header__item__link__switcher:focus
+.header__container__address__list__item{
+    color: #434455;
+}
+.header-link:hover,
+.header-link:focus
 {
     color: #404bbf;
 }
@@ -142,7 +128,7 @@ body{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    
     text-decoration: none;
     font-style: normal;
 }
@@ -154,17 +140,19 @@ body{
 .solutions{
     background: #2e2f42;
     padding: 188px 0;
-    align-items: center;
-    margin-bottom: 120px;
 }
-.title-h1{
+.solutions__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.solutions__container__title{
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    width: 496px;
     margin-bottom: 48px;
     max-width: 496px;
 }
@@ -175,7 +163,6 @@ body{
     background: #4d5ae5;
     font-weight: 500;
     cursor: pointer;
-    margin-bottom: 188px;
     border-radius: 4px;
     border: none;
     padding: 16px 32px;
@@ -194,8 +181,18 @@ body{
 }
 .features__container__list{
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 24px;
+    gap: 24px;
+}
+.features__container__list__item{
+    padding: 0;
+    width: calc((100% - 72px) / 4);
+}
+.features__container__list__item__title{
+    margin-bottom: 8px;
+}
+
+.features__container__list__item__text{
+    text-align: initial;
 }
 /* --------------222222222222------------- */
 /* -------------333333333------ */
@@ -203,9 +200,10 @@ body{
     background-color: #F4F4FD;
     padding: 120px 0;
 }
+.team__container__title{
+    margin-bottom: 72px;
+}
 .team__container__list{
-    display: flex;
-    gap: 24px;
     padding: 0 156px;
 }
 
@@ -213,26 +211,49 @@ body{
     text-align: center;
     background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
-    margin-bottom: 120px;
     border-radius: 0px 0px 4px 4px;
-    padding: 32px 0;
+}
+.team__container__list__item__caption{
+    margin: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
 }
 /* ------------3333333333---------- */
 /* -----------444444444444-------------- */
 .portfolio{
     padding: 120px 0;
 }
+.portfolio__container__title{
+    margin-bottom: 72px;
+}
+.portfolio__container__list{
+    flex-wrap: wrap;
+}
+.portfolio__container__list__item{
+    width: calc((100% - 48px) / 3); 
+}
+.portfolio__container__list__item__caption{
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 .portfolio__container__list__item__subtitle{
     text-transform: capitalize;
-    text-align: center;
-    border: 1px solid #e7e9fc;
-    padding: 32px 16px;
 }
 /* --------44444444444------------- */
 
 /* ---------------------FOOTER-------------------- */
 .footer{
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+.footer__container__caption{
+
 }
 .footer__container__logo{
     margin-top: 100px;
@@ -246,7 +267,6 @@ body{
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #2e2f42;
-    padding-bottom: 32px;
-    margin-top: 100px;
+    margin-top: 16px;
     width: 264px;
 }/* ---------------------FOOTER-------------------- */
