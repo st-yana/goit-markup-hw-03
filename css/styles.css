@@ -208,12 +208,12 @@ body{
     padding: 0 156px;
 }
 .team__container__list__item{
+    border-radius: 0px 0px 4px 4px;
     width: calc((100% - 72px) / 4);
 }
 .team__container__list__item__caption{
     text-align: center;
     background-color: #FFFFFF;
-    border-radius: 0px 0px 4px 4px;
     padding: 32px 0;
 }
 .team__container__list__item__caption__subtitle{
