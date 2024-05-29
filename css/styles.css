@@ -86,6 +86,7 @@ body{
 }
 .header__container{
     display: flex;
+    width: 1158px;
 }
 .header__container__navigation{
     display: flex;
@@ -210,15 +211,16 @@ body{
 .team__container__list__item{
     text-align: center;
     background-color: #FFFFFF;
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
 }
 .team__container__list__item__caption{
-    margin: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 8px;
+    padding: 32px 0;
 }
+.team__container__list__item__caption__subtitle{
+    margin-bottom: 8px;
+}
+
 /* ------------3333333333---------- */
 /* -----------444444444444-------------- */
 .portfolio{
@@ -229,6 +231,7 @@ body{
 }
 .portfolio__container__list{
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 .portfolio__container__list__item{
     width: calc((100% - 48px) / 3); 
@@ -244,6 +247,7 @@ body{
 }
 .portfolio__container__list__item__subtitle{
     text-transform: capitalize;
+    margin-bottom: 8px;
 }
 /* --------44444444444------------- */
 
@@ -252,11 +256,9 @@ body{
     background-color: #2e2f42;
     padding: 100px 0;
 }
-.footer__container__caption{
-
-}
 .footer__container__logo{
-    margin-top: 100px;
+    display: inline-block;
+    margin-bottom: 16px; 
 }
 .footer__container__logo__part{
     color: #f4f4fd;
@@ -267,6 +269,5 @@ body{
     letter-spacing: 0.02em;
     color: #f4f4fd;
     background: #2e2f42;
-    margin-top: 16px;
-    width: 264px;
+    max-width: 264px;
 }/* ---------------------FOOTER-------------------- */
