@@ -33,7 +33,7 @@ body{
 }
 /* ----------------------------------------------  */
 .container { 
-    max-width: 1425px;
+    max-width: 1158px;
     padding: 0 15px;  
     margin: 0 auto; 
 }
@@ -185,7 +185,7 @@ body{
     gap: 24px;
 }
 .features__container__list__item{
-    padding: 0;
+    
     width: calc((100% - 72px) / 4);
 }
 .features__container__list__item__title{
@@ -203,10 +203,6 @@ body{
 }
 .team__container__title{
     margin-bottom: 72px;
-}
-.team__container__list{
-    padding: 0 156px;
-    gap: 24px;
 }
 .team__container__list__item{
     border-radius: 0px 0px 4px 4px;
@@ -241,9 +237,6 @@ body{
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
     padding: 32px 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
 }
 .portfolio__container__list__item__subtitle{
     text-transform: capitalize;
